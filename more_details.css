@@ -1,0 +1,134 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Light background for a clean look */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1f1f1f; /* Dark gray for text to enhance readability */
+}
+
+/* About Section */
+.about {
+    background: linear-gradient(145deg, #4e73df, #3a5bbd); /* Soft blue gradient for a modern, professional look */
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about p {
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.about ul li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about ul li::before {
+    content: "•";
+    font-size: 20px;
+    color: #ffffff; /* Bright white for bullet points */
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Work Experience Section */
+.about h2 {
+    font-size: 2.2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333; /* Dark gray for subheadings */
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    border: 2px solid #007bff;
+    background-color: #fff; /* Neutral dark color for icons */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #007bff;
+    color: #fff; /* White text on hover */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:active {
+    background-color: #0056b3;
+    color: #fff;
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .about h1 {
+        font-size: 2.2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .about ul li {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
